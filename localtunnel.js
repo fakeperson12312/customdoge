@@ -72,17 +72,17 @@ server.on("upgrade", (req, socket, head) => {
 });
 
 server.listen(8000, async () => {
-  console.log(chalk.bgBlue.white.bold(`  Welcome to Doge V4, user!  `) + '\n');
-  console.log(chalk.cyan('-----------------------------------------------'));
-  console.log(chalk.green('  🌟 Status: ') + chalk.bold('Active'));
-  console.log(chalk.green('  🌍 Port: ') + chalk.bold(chalk.yellow(server.address().port)));
-  console.log(chalk.green('  🕒 Time: ') + chalk.bold(new Date().toLocaleTimeString()));
-  console.log(chalk.cyan('-----------------------------------------------'));
-  console.log(chalk.magenta('📦 Version: ') + chalk.bold(version));
-  console.log(chalk.magenta('🔗 Local URL: ') + chalk.underline(`http://localhost:${server.address().port}`));
-  console.log(chalk.cyan('-----------------------------------------------'));
-  console.log(chalk.blue('💬 Discord: ') + chalk.underline(discord));
-  console.log(chalk.cyan('-----------------------------------------------'));
+  // console.log(chalk.bgBlue.white.bold(`  Welcome to Doge V4, user!  `) + '\n');
+  // console.log(chalk.cyan('-----------------------------------------------'));
+  // console.log(chalk.green('  🌟 Status: ') + chalk.bold('Active'));
+  // console.log(chalk.green('  🌍 Port: ') + chalk.bold(chalk.yellow(server.address().port)));
+  // console.log(chalk.green('  🕒 Time: ') + chalk.bold(new Date().toLocaleTimeString()));
+  // console.log(chalk.cyan('-----------------------------------------------'));
+  // console.log(chalk.magenta('📦 Version: ') + chalk.bold(version));
+  // console.log(chalk.magenta('🔗 Local URL: ') + chalk.underline(`http://localhost:${server.address().port}`));
+  // console.log(chalk.cyan('-----------------------------------------------'));
+  // console.log(chalk.blue('💬 Discord: ') + chalk.underline(discord));
+  // console.log(chalk.cyan('-----------------------------------------------'));
   try {
     const tunnel = await localtunnel({ port: 8000 });
     console.log(chalk.green('🚀 Public Tunnel: ') + chalk.underline(tunnel.url));
